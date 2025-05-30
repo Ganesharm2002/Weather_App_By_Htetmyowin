@@ -1,12 +1,10 @@
-export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
+const config = {
+  plugins: ["@tailwindcss/postcss"],
 };
 
+// tailwind.config.js
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"], 
+  content: ["./src/**/*.{js,ts,jsx,tsx}"], // update as needed
   theme: {
     extend: {
       keyframes: {
@@ -23,6 +21,7 @@ module.exports = {
   plugins: [],
 };
 
+export default config;
 
 
 
